@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spotify Recorder", "Spotify Recorder\Spotify Recorder.csproj", "{18203560-2ED4-406D-BC25-4CB568DBEEE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibSpotify", "LibSpotify\LibSpotify.csproj", "{E110B77A-A4DF-4853-BBD4-E2F026FCEBC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+		test|Any CPU = test|Any CPU
+		test|Mixed Platforms = test|Mixed Platforms
+		test|x64 = test|x64
+		test|x86 = test|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18203560-2ED4-406D-BC25-4CB568DBEEE2}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{18203560-2ED4-406D-BC25-4CB568DBEEE2}.Debug|Any CPU.Build.0 = Debug|x86
+		{18203560-2ED4-406D-BC25-4CB568DBEEE2}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{18203560-2ED4-406D-BC25-4CB568DBEEE2}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{18203560-2ED4-406D-BC25-4CB568DBEEE2}.Debug|x64.ActiveCfg = Debug|x86
+		{18203560-2ED4-406D-BC25-4CB568DBEEE2}.Debug|x86.ActiveCfg = Debug|x86
+		{18203560-2ED4-406D-BC25-4CB568DBEEE2}.Debug|x86.Build.0 = Debug|x86
+		{18203560-2ED4-406D-BC25-4CB568DBEEE2}.Release|Any CPU.ActiveCfg = Release|x86
+		{18203560-2ED4-406D-BC25-4CB568DBEEE2}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{18203560-2ED4-406D-BC25-4CB568DBEEE2}.Release|Mixed Platforms.Build.0 = Release|x86
+		{18203560-2ED4-406D-BC25-4CB568DBEEE2}.Release|x64.ActiveCfg = Release|x64
+		{18203560-2ED4-406D-BC25-4CB568DBEEE2}.Release|x86.ActiveCfg = Release|x86
+		{18203560-2ED4-406D-BC25-4CB568DBEEE2}.Release|x86.Build.0 = Release|x86
+		{18203560-2ED4-406D-BC25-4CB568DBEEE2}.test|Any CPU.ActiveCfg = test|x64
+		{18203560-2ED4-406D-BC25-4CB568DBEEE2}.test|Mixed Platforms.ActiveCfg = test|x64
+		{18203560-2ED4-406D-BC25-4CB568DBEEE2}.test|Mixed Platforms.Build.0 = test|x64
+		{18203560-2ED4-406D-BC25-4CB568DBEEE2}.test|x64.ActiveCfg = test|x64
+		{18203560-2ED4-406D-BC25-4CB568DBEEE2}.test|x64.Build.0 = test|x64
+		{18203560-2ED4-406D-BC25-4CB568DBEEE2}.test|x86.ActiveCfg = test|x86
+		{18203560-2ED4-406D-BC25-4CB568DBEEE2}.test|x86.Build.0 = test|x86
+		{E110B77A-A4DF-4853-BBD4-E2F026FCEBC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E110B77A-A4DF-4853-BBD4-E2F026FCEBC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E110B77A-A4DF-4853-BBD4-E2F026FCEBC6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E110B77A-A4DF-4853-BBD4-E2F026FCEBC6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E110B77A-A4DF-4853-BBD4-E2F026FCEBC6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E110B77A-A4DF-4853-BBD4-E2F026FCEBC6}.Debug|x64.Build.0 = Debug|Any CPU
+		{E110B77A-A4DF-4853-BBD4-E2F026FCEBC6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E110B77A-A4DF-4853-BBD4-E2F026FCEBC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E110B77A-A4DF-4853-BBD4-E2F026FCEBC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E110B77A-A4DF-4853-BBD4-E2F026FCEBC6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E110B77A-A4DF-4853-BBD4-E2F026FCEBC6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E110B77A-A4DF-4853-BBD4-E2F026FCEBC6}.Release|x64.ActiveCfg = Release|x64
+		{E110B77A-A4DF-4853-BBD4-E2F026FCEBC6}.Release|x64.Build.0 = Release|x64
+		{E110B77A-A4DF-4853-BBD4-E2F026FCEBC6}.Release|x86.ActiveCfg = Release|Any CPU
+		{E110B77A-A4DF-4853-BBD4-E2F026FCEBC6}.test|Any CPU.ActiveCfg = test|Any CPU
+		{E110B77A-A4DF-4853-BBD4-E2F026FCEBC6}.test|Any CPU.Build.0 = test|Any CPU
+		{E110B77A-A4DF-4853-BBD4-E2F026FCEBC6}.test|Mixed Platforms.ActiveCfg = test|x64
+		{E110B77A-A4DF-4853-BBD4-E2F026FCEBC6}.test|Mixed Platforms.Build.0 = test|x64
+		{E110B77A-A4DF-4853-BBD4-E2F026FCEBC6}.test|x64.ActiveCfg = test|x64
+		{E110B77A-A4DF-4853-BBD4-E2F026FCEBC6}.test|x64.Build.0 = test|x64
+		{E110B77A-A4DF-4853-BBD4-E2F026FCEBC6}.test|x86.ActiveCfg = test|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

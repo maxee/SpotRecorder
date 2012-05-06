@@ -1,0 +1,13 @@
+﻿<Window x:Class="Spotify_Recorder.Info"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Spot - Recorder - Info" Height="500" Width="500" Icon="/Spot%20Recorder;component/Images/emblem-multimedia.png" ResizeMode="NoResize" Topmost="False" ShowInTaskbar="False">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*" />
+            <RowDefinition Height="5*" />
+        </Grid.RowDefinitions>
+        <Button Content="Close" Grid.Row="1" Height="Auto" HorizontalAlignment="Stretch" Margin="5" Name="btn_close" VerticalAlignment="Stretch" Width="150" FontSize="16" FontWeight="Normal" Click="btn_close_Click" />
+        <WebBrowser Height="Auto" HorizontalAlignment="Stretch" Margin="5" Name="wb_info" VerticalAlignment="Stretch" Width="Auto" />
+    </Grid>
+</Window>

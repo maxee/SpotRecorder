@@ -1,0 +1,74 @@
+﻿<Window x:Class="Spotify_Recorder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SpotRecorder" Height="482" Width="1036" ResizeMode="NoResize"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}" Name="SpotRecorderWindow" Icon="/Spot%20Recorder;component/Images/emblem-multimedia.png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="9*" />
+            <RowDefinition Height="7*" />
+        </Grid.RowDefinitions>
+        <ListView Height="Auto" HorizontalAlignment="Stretch" Name="lv_recordedTracks" VerticalAlignment="Stretch" Width="Auto" ItemsSource="{Binding recordedTracks}" Grid.Row="1">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Filename" Width="500" DisplayMemberBinding="{Binding Path}" />
+                    <GridViewColumn Header="Title" Width="200" DisplayMemberBinding="{Binding Title}" />
+                    <GridViewColumn Header="Artist" Width="200" DisplayMemberBinding="{Binding Artist}" />
+                    <GridViewColumn Header="Status" Width="100" DisplayMemberBinding="{Binding Status}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Grid Height="Auto" HorizontalAlignment="Stretch" Name="grid1" VerticalAlignment="Stretch" Width="Auto">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Button Content="Select Folder" Height="Auto" HorizontalAlignment="Stretch" Margin="20,5" Name="btn_selectFolder" VerticalAlignment="Stretch" Width="Auto" Click="btn_selectFolder_Click" Grid.Column="1" FontSize="18" IsDefault="True" />
+            <TextBox Height="Auto" HorizontalAlignment="Stretch" Name="tb_folderLocation" VerticalAlignment="Stretch" Text="Please choose a location..." FontSize="16" IsReadOnly="True" Margin="10,5" VerticalContentAlignment="Center" />
+        </Grid>
+        <Grid Grid.Row="2" Height="Auto" HorizontalAlignment="Stretch" Name="grid2" VerticalAlignment="Stretch" Width="Auto">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />            
+            </Grid.ColumnDefinitions>
+            <GroupBox Header="Recording" HorizontalAlignment="Stretch" Margin="5" Name="groupBox1" VerticalAlignment="Stretch" Grid.Column="2">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <Button Content="Start recording" Height="Auto" HorizontalAlignment="Stretch" Margin="5" Name="btn_recordingStart" VerticalAlignment="Stretch" Width="Auto" Click="btn_recordingStart_Click" FontSize="20" Grid.Column="1" />
+                    <Button Content="Stop recording" Height="Auto" HorizontalAlignment="Stretch" Margin="5" Name="btn_stopRecording" VerticalAlignment="Stretch" Width="Auto" FontSize="20" Click="btn_stopRecording_Click" IsEnabled="False" />
+                    <ComboBox HorizontalAlignment="Stretch" Margin="5,34,5,5" Name="cb_recordingDevices" VerticalAlignment="Stretch" Width="Auto" Grid.Row="1" Grid.ColumnSpan="2" VerticalContentAlignment="Center" />
+                    <Label Content="Recording Device:" Height="28" HorizontalAlignment="Stretch" Margin="6,0,0,0" Name="label1" VerticalAlignment="Top" Grid.Row="1" />
+                </Grid>
+            </GroupBox>
+            <GroupBox Grid.Column="1" Header="Status" Height="Auto" HorizontalAlignment="Stretch" Margin="5" Name="groupBox2" VerticalAlignment="Stretch" Width="Auto">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="5*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Status" Height="Auto" HorizontalAlignment="Stretch" Margin="5" Name="label2" VerticalAlignment="Stretch" FontSize="18" />
+                    <Label Content="Title" Grid.Row="1" Height="Auto" HorizontalAlignment="Stretch" Margin="5" Name="label3" VerticalAlignment="Stretch" FontSize="18" />
+                    <Label Content="Artist" Grid.Row="2" Height="Auto" HorizontalAlignment="Stretch" Margin="5" Name="label4" VerticalAlignment="Stretch" FontSize="18" />
+                    <Label Grid.Column="1" Height="Auto" HorizontalAlignment="Stretch" Margin="5" Name="lb_currentTitle" VerticalAlignment="Stretch" Grid.Row="1" FontSize="16" VerticalContentAlignment="Center" />
+                    <Label Grid.Column="1" Grid.Row="2" Height="Auto" HorizontalAlignment="Stretch" Margin="5" Name="lb_currentArtist" VerticalAlignment="Stretch" FontSize="16" VerticalContentAlignment="Center" />
+                    <Label Content="Recording Stopped" Grid.Column="1" Height="Auto" HorizontalAlignment="Stretch" Margin="5" Name="lb_recordingStatus" VerticalAlignment="Stretch" FontSize="16" FontFamily="Segoe UI" VerticalContentAlignment="Center" />
+                </Grid>
+            </GroupBox>
+            <Button Content="Info" Height="30" HorizontalAlignment="Left" Margin="6,137,0,0" Name="btn_info" VerticalAlignment="Top" Width="150" FontSize="16" Click="btn_info_Click" />
+        </Grid>
+    </Grid>
+</Window>
